@@ -30,7 +30,7 @@ export default function SimpleSlider() {
   };
 
   return (
-    <Box sx={{ width: '100vw', height: '70vh', position: 'relative', left: '50%', right: '50%', marginLeft: '-50vw', marginRight: '-50vw', overflow: 'hidden' }}>
+  <Box sx={{ width: '100vw', height: '70vh', position: 'relative', left: '50%', right: '50%', marginLeft: '-50vw', marginRight: '-50vw', overflow: 'hidden' }}>
       <Slider {...settings} beforeChange={handleBeforeChange}>
         {slides.map((slide, idx) => (
           <Box key={idx} sx={{ m: 0, p: 0, position: 'relative' }}>

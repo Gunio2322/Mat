@@ -29,24 +29,23 @@ const Home = () => (
       <meta name="twitter:description" content="Witamy na stronie głównej aplikacji React SSR z Material UI!" />
       <meta name="twitter:image" content="https://via.placeholder.com/800x300?text=Slide+1" />
     </Helmet>
-    <Box sx={{ position: 'relative', width: '100vw', height: '70vh', overflow: 'hidden', m: 0, p: 0 }}>
-      {/* Menu nakładane na slider */}
-      {/* <Box sx={{ position: 'absolute', top: 0, left: 0, width: '100vw', zIndex: 10 }}>
-        <MainMenu />
-      </Box> */}
-      {/* ...Slider i menu... */}
-      <Slider />
+  <Box sx={{ position: 'relative', width: '100vw', height: '70vh', overflow: 'hidden', m: 0, p: 0 }}>
+    {/* Menu nakładane na slider */}
+    <Box sx={{ position: 'absolute', top: 0, width: { xs: '100%', md: '100%' }, display: 'flex', justifyContent: 'center', zIndex: 10 }}>
+      <MainMenu />
     </Box>
+    <Slider />
+  </Box>
     <Box
       sx={{
         maxWidth: { xs: '100vw', sm: 900 },
-        width: { xs: '100vw', sm: '100%' },
-        mx: { xs: 0, sm: 'auto' },
+        // width: { xs: '100vw', sm: '100%' },
+        mx: { xs: 1, sm: 'auto' },
         mt: { xs: 0, md: 4 },
         bgcolor: '#fff',
         borderRadius: { xs: 0, sm: 2 },
         boxShadow: { xs: 0, sm: 2 },
-        px: { xs: 0, sm: 2, md: 4 },
+        px: { xs: 1, sm: 2, md: 4 },
         py: { xs: 2, md: 4 },
   textAlign: 'center'
       }}
@@ -55,12 +54,7 @@ const Home = () => (
       <BlogSection />
       <ContactUsSection />
     </Box>
-    {/* <Box sx={{ position: 'relative', width: '100vw', textAlign: 'center', color: '#fff', zIndex: 4, mt: 4 }}> */}
-      {/* <Typography variant="h2" sx={{ textShadow: '0 2px 8px #000' }}>Strona Główna</Typography>
-      <Typography variant="h5" sx={{ mt: 2, textShadow: '0 2px 8px #000' }}>
-        Witamy na stronie głównej aplikacji React SSR z Material UI!
-      </Typography> */}
-    {/* </Box> */}
+
   </>
 );
 

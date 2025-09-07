@@ -24,18 +24,23 @@ const Kontakt = () => (
       <meta name="twitter:description" content="Skontaktuj się z nami pod adresem: kontakt@example.com" />
       <meta name="twitter:image" content="https://via.placeholder.com/800x300?text=Slide+1" />
     </Helmet>
-    {/* Baner i treść responsywne */}
-    <Box sx={{ width: '100vw', maxWidth: '100vw', mx: 'auto', p: 0 }}>
-      <Banner height={200} sx={{ display: { xs: 'block', md: 'none' } }} />
-
+     <Box sx={{ width: '100vw', m: 0, p: 0, overflow: 'hidden', position: 'relative', left: 0, right: 0 }}>
+          {/* Menu nakładane na slider */}
+          <Box sx={{ position: 'absolute', top: 0, left: 0, width: { xs: '100%', md: '100%' }, display: 'flex', justifyContent: 'center', zIndex: 10 }}>
+            <MainMenu />
+          </Box>
+       <Banner />
+     </Box>
+    {/* Baner od samej góry, na całą szerokość */}
+  <Box sx={{ width: '100%', p: 0, m: 0, position: 'relative', left: 0, right: 0 }}>
       <Box
         sx={{
           bgcolor: '#fff',
           minHeight: { xs: '30vh', md: '40vh' },
           height: { xs: 'auto', md: '40vh' },
-          maxWidth: { xs: '100vw', md: 'md' },
-          mx: 'auto',
-          p: { xs: 2, md: 4 },
+          // width: '100vw',
+          mx:{ xs: 1, md: 2}, // margint and right
+          // py: { xs: 2, md: 4 },
           display: 'flex',
           flexDirection: 'column',
           justifyContent: 'center',
@@ -61,7 +66,6 @@ const Kontakt = () => (
         </Typography>
       </Box>
     </Box>
-
   </>
 );
 
