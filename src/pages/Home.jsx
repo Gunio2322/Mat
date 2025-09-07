@@ -4,7 +4,10 @@ import { Box, Typography } from '@mui/material';
 import Slider from '../components/Slider';
 
 import MainMenu from '../components/MainMenu';
-
+import AboutSection from '../components/AboutSection';
+import BlogSection from '../components/BlogSection';
+import Contact from '@mui/material';
+import ContactUsSection from '../components/ContactUsSection';
 const Home = () => (
   <>
     <Helmet>
@@ -34,12 +37,23 @@ const Home = () => (
       {/* ...Slider i menu... */}
       <Slider />
     </Box>
-    <Box sx={{ maxWidth: 900, width: '90vw', mx: 'auto', mt: 4, bgcolor: '#fff', borderRadius: 2, boxShadow: 2, p: { xs: 2, md: 4 }, textAlign: 'center' }}>
-      <Typography variant="h5" gutterBottom>Kontakt</Typography>
-      <Typography variant="h3" gutterBottom>Kontakt</Typography>
-      <Typography variant="body1">
-        Skontaktuj się z nami pod adresem: kontakt@example.com
-      </Typography>
+    <Box
+      sx={{
+        maxWidth: { xs: '100vw', sm: 900 },
+        width: { xs: '100vw', sm: '100%' },
+        mx: { xs: 0, sm: 'auto' },
+        mt: { xs: 0, md: 4 },
+        bgcolor: '#fff',
+        borderRadius: { xs: 0, sm: 2 },
+        boxShadow: { xs: 0, sm: 2 },
+        px: { xs: 0, sm: 2, md: 4 },
+        py: { xs: 2, md: 4 },
+  textAlign: 'center'
+      }}
+    >
+      <AboutSection />
+      <BlogSection />
+      <ContactUsSection />
     </Box>
     {/* <Box sx={{ position: 'relative', width: '100vw', textAlign: 'center', color: '#fff', zIndex: 4, mt: 4 }}> */}
       {/* <Typography variant="h2" sx={{ textShadow: '0 2px 8px #000' }}>Strona Główna</Typography>

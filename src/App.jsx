@@ -15,9 +15,9 @@ const App = ({ url }) => {
   return (
     <HelmetProvider>
       <Router {...routerProps}>
-            <Box sx={{ position: 'absolute', top: 0, left: 0, width: '100vw', zIndex: 10 }}>
-      <MainMenu />
-    </Box>
+        <Box sx={{ position: 'absolute', top: 0, left: 0, width: '100vw', zIndex: 10 }}>
+          <MainMenu />
+        </Box>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/kontakt" element={<Kontakt />} />
