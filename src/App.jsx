@@ -7,6 +7,7 @@ import MainMenu from './components/MainMenu';
 import BottomMenu from './components/BottomMenu';
 import { Box } from '@mui/material';
 import FooterSection from './components/FooterSection';
+import Servis from './pages/Servis';
 
 const isSSR = typeof window === 'undefined';
 
@@ -23,6 +24,7 @@ const App = ({ url }) => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/kontakt" element={<Kontakt />} />
+          <Route path="/oferta" element={<Servis />} />
         </Routes>
         <FooterSection  />
 

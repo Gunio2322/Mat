@@ -7,6 +7,7 @@ import Slider from './Slider';
 const menuItems = [
   { text: 'Home', path: '/' },
   { text: 'Kontakt', path: '/kontakt' },
+  { text: 'Oferta', path: '/oferta' },
 ];
 
 export default function MainMenu() {
