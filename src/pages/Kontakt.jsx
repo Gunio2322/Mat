@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet-async';
 import { Box, Typography } from '@mui/material';
 import MainMenu from '../components/MainMenu';
 import Banner from '../components/Banner';
+import ContactPage from '../components/ContactPage';
 const Kontakt = () => (
   <>
     <Helmet>
@@ -24,47 +25,31 @@ const Kontakt = () => (
       <meta name="twitter:description" content="Skontaktuj się z nami pod adresem: kontakt@example.com" />
       <meta name="twitter:image" content="https://via.placeholder.com/800x300?text=Slide+1" />
     </Helmet>
-     <Box sx={{ width: '100vw', m: 0, p: 0, overflow: 'hidden', position: 'relative', left: 0, right: 0 }}>
-          {/* Menu nakładane na slider */}
-          <Box sx={{ position: 'absolute', top: 0, left: 0, width: { xs: '100%', md: '100%' }, display: 'flex', justifyContent: 'center', zIndex: 10 }}>
-            <MainMenu />
-          </Box>
-       <Banner />
-     </Box>
-    {/* Baner od samej góry, na całą szerokość */}
-  <Box sx={{ width: '100%', p: 0, m: 0, position: 'relative', left: 0, right: 0 }}>
-      <Box
-        sx={{
-          bgcolor: '#fff',
-          minHeight: { xs: '30vh', md: '40vh' },
-          height: { xs: 'auto', md: '40vh' },
-          // width: '100vw',
-          mx:{ xs: 1, md: 2}, // margint and right
-          // py: { xs: 2, md: 4 },
-          display: 'flex',
-          flexDirection: 'column',
-          justifyContent: 'center',
-          alignItems: 'center',
-        }}
-      >
-        <Typography
-          variant="h5"
-          sx={{ display: { xs: 'block', md: 'none' } }}
-          gutterBottom
-        >
-          Kontakt
-        </Typography>
-        <Typography
-          variant="h3"
-          sx={{ display: { xs: 'none', md: 'block' } }}
-          gutterBottom
-        >
-          Kontakt
-        </Typography>
-        <Typography variant="body1" mt={4} textAlign="center">
-          Skontaktuj się z nami pod adresem: kontakt@example.com
-        </Typography>
+
+    <Box sx={{ width: '100vw', m: 0, p: 0, overflow: 'hidden', position: 'relative', left: 0, right: 0 }}>
+      {/* Menu nakładane na slider */}
+      <Box sx={{ position: 'absolute', width: { xs: '100%', md: '100%' }, display: 'flex', justifyContent: 'center', zIndex: 10 }}>
+        <MainMenu />
       </Box>
+      <Banner />
+    </Box>
+
+    <Box
+      sx={{
+        bgcolor: '#fff',
+        minHeight: { xs: '30vh', md: '40vh' },
+        width: { xs: 'auto', sm: '90%', md: '700px', lg: '900px' },
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center',
+        mx: { xs: 0, sm: 'auto', md: 'auto', lg: 'auto' }, // margin-x: auto for center on tablet/desktop
+        my: { xs: 2, sm: 4, md: 6, lg: 8 }, // margin-y: różne dla urządzeń
+        px: { xs: 2, sm: 4, md: 6, lg: 8 }, // padding-x: różne dla urządzeń
+        py: { xs: 2, sm: 3, md: 4, lg: 5 }, // padding-y: różne dla urządzeń
+      }}
+    >
+      <ContactPage />
     </Box>
   </>
 );
