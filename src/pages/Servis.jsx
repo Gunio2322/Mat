@@ -8,21 +8,21 @@ import ServicesSection from '../components/ServicesSection';
 const Servis = () => (
   <>
     <Helmet>
-      <title>Kontakt | React SSR Material UI</title>
+      <title>Servis | React SSR Material UI</title>
       <meta name="description" content="Skontaktuj się z nami pod adresem: kontakt@example.com" />
       <meta name="keywords" content="React, SSR, Material UI, kontakt, SEO, aplikacja" />
       <meta name="author" content="Twój Zespół" />
       <meta name="robots" content="index, follow" />
-      <link rel="canonical" href="https://twojadomena.pl/kontakt" />
+      <link rel="canonical" href="https://twojadomena.pl/servis" />
       {/* Open Graph */}
-      <meta property="og:title" content="Kontakt | React SSR Material UI" />
+      <meta property="og:title" content="Servis | React SSR Material UI" />
       <meta property="og:description" content="Skontaktuj się z nami pod adresem: kontakt@example.com" />
       <meta property="og:type" content="website" />
-      <meta property="og:url" content="https://twojadomena.pl/kontakt" />
+      <meta property="og:url" content="https://twojadomena.pl/servis" />
       <meta property="og:image" content="https://via.placeholder.com/800x300?text=Slide+1" />
       {/* Twitter Card */}
       <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:title" content="Kontakt | React SSR Material UI" />
+      <meta name="twitter:title" content="Serwis | React SSR Material UI" />
       <meta name="twitter:description" content="Skontaktuj się z nami pod adresem: kontakt@example.com" />
       <meta name="twitter:image" content="https://via.placeholder.com/800x300?text=Slide+1" />
     </Helmet>

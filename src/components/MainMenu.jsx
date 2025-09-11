@@ -2,7 +2,7 @@ import React from 'react';
 import { IconButton, Typography, Drawer, Box } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import { Link } from 'react-router-dom';
-import Slider from './Slider';
+
 
 const menuItems = [
   { text: 'Home', path: '/' },

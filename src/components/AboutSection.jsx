@@ -24,7 +24,7 @@ const widgets = [
 ];
 
 const AboutSection = () => (
-  <Box sx={{ py: 8, bgcolor: "#f7fafd" }}>
+  // <Box sx={{ py: 8, bgcolor: "#f7fafd" }}>
     <Box sx={{ maxWidth: 1200, mx: "auto" }}>
       <Grid container spacing={4} alignItems="center">
         {/* Nagłówki i cytat */}
@@ -64,7 +64,7 @@ const AboutSection = () => (
         ))}
       </Grid>
     </Box>
-  </Box>
+  // </Box>
 );
 
 export default AboutSection;

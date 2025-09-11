@@ -22,9 +22,9 @@ module.exports = {
     ],
   },
   plugins: [
-    new HtmlWebpackPlugin({
-      template: './src/index.html',
-    }),
+    // new HtmlWebpackPlugin({
+    //   template: './src/index.html',
+    // }),
   ],
   resolve: {
     extensions: ['.js', '.jsx'],

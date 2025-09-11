@@ -7,8 +7,8 @@ const ContactUsSection = () => (
     <Box sx={{ maxWidth: 1200, mx: "auto" }}>
       <Grid container spacing={4} alignItems="center">
         <Grid item xs={12} md={6}>
-          <Box>
-            <Typography variant="h1" sx={{ fontWeight: 700, fontSize: { xs: "2rem", md: "2.5rem" }, color: "primary.main", mb: 1 }}>
+          <Box sx={{ textAlign: 'center' }}>
+            <Typography variant="h1" sx={{ fontWeight: 700, fontSize: { xs: "2rem",  md: "2.5rem" }, color: "primary.main", mb: 1 }}>
               Contact Us
             </Typography>
             <Typography variant="h4" sx={{ fontWeight: 700, color: "#fff", mb: 2 }}>

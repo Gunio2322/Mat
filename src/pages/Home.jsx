@@ -1,7 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Box, Typography } from '@mui/material';
-import Slider from '../components/Slider';
+import Slider from '../components/SliderCaruousel';
 
 import MainMenu from '../components/MainMenu';
 import AboutSection from '../components/AboutSection';
@@ -43,11 +43,11 @@ const Home = () => (
         mx: { xs: 1, sm: 'auto' },
         mt: { xs: 0, md: 4 },
         bgcolor: '#fff',
-        borderRadius: { xs: 0, sm: 2 },
-        boxShadow: { xs: 0, sm: 2 },
+        // borderRadius: { xs: 0, sm: 2 },
+        // boxShadow: { xs: 0, sm: 2 },
         px: { xs: 1, sm: 2, md: 4 },
         py: { xs: 2, md: 4 },
-  textAlign: 'center'
+        textAlign: 'left' //tu było center
       }}
     >
       <AboutSection />
